@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  # Sinatraのサンプルアプリケーション
+  app:
+    entrypoint: /docker-entrypoint.sh
+    build: .
+    volumes:
+      - .:/app
